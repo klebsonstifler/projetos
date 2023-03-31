@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
 }
-.container{
+.container {
     width: 400px;
     margin: auto auto;
     padding: 5px 0px 5px 0px;
@@ -26,7 +26,21 @@
 }
 
 div > h1 > a {
-    font: 20px var(--fontepadrao);
-    
+    font: 18px var(--fontepadrao);
+    color: var(--purple);
     text-decoration: none;
+}
+
+.botoes {
+    padding: 5px;
+    line-height: 30px;
+}
+
+.icones {
+    padding: 10px;
+    letter-spacing: 20px;
+}
+
+button {
+    width: 220px;
 }
