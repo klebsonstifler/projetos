@@ -13,5 +13,74 @@
     <div class="foguete"><img src="images/images/rocket.svg" alt="foguete"></div>
     <div class="imagebottom"><img src="images/images/bottom-image.svg" alt="bottomimage"></div>
 
+    <div class="container">
+
+        <h1 id="titulo">
+            READY TO LAUNCH IN...
+        </h1>
+
+        <div class="contador" id="contador">
+        
+            <div class="dias">
+                <span>Dias</span>
+                <p class="numbers" id="dias">00</p>
+                
+            </div>
+        
+            <div class="horas">
+                <span>Horas</span>
+                <p class="numbers" id="horas">00</p>
+            </div>
+        
+            <div class="minutos">
+                <span>Minutos</span>
+                <p class="numbers" id="minutos">00</p>
+            </div>
+        
+            <div class="segundos">
+                <span>Segundos</span>
+                <p class="numbers" id="segundos">00</p>
+            </div>
+        
+        </div>
+        <p class="text">Inscreva-se para saber mais sobre o lançamento</p>
+        <button id="inscreva">
+            Inscreva-se
+        </button>
+    </div>
+
 </body>
+<script>
+    const diasel = document.getElementById("dias");
+    const horasel = document.getElementById("horas");
+    const minutosel = document.getElementById("minutos");
+    const segundosel = document.getElementById("segundos");
+
+    const coming = "1 Jan 2024"
+
+    function countdown() {
+        const comingDate = new Date(coming);
+        const currentDate = new Date();
+
+        const totalSeconds = (comingDate - currentDate) / 1000;
+
+        const dias = Math.floor(totalSeconds / 3600 / 24);
+        const horas = Math.floor(totalSeconds / 3600) % 24;
+        const minutos = Math.floor(totalSeconds / 60) %60;
+        const segundos = Math.floor(totalSeconds) % 60;
+
+        diasel.innerHTML = dias;
+        horasel.innerHTML = formatTime(horas);
+        minutosel.innerHTML = formatTime(minutos);
+        segundosel.innerHTML = formatTime(segundos);
+
+    }
+    function formatTime(time) {
+            return time < 10 ? `0${time}` : time;
+        }
+
+    countdown();
+
+    setInterval(countdown,1000);
+</script>
 </html>

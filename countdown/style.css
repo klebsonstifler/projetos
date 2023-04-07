@@ -4,6 +4,8 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: var(--fontpadrao);
+    text-align: center;
 }
 :root {
     --fontpadrao:'Poppins', sans-serif;
@@ -35,6 +37,48 @@
     bottom: 0px;
     width: 99.8vw;
 }
+
 .imagebottom img {
     width:100%;
+}
+
+.container {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+}
+
+#titulo {
+    color: var(--purple);
+}
+
+.contador {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span {
+    color: var(--light-grey);
+    font-size: .8rem;
+}
+
+.numbers {
+    font-size: 3.5rem;
+    color: var(--black);
+    padding: 0rem 0.5rem 0rem 0rem;
+}
+
+.text {
+    color: var(--text-color);
+    font-size: 0.8rem;
+    padding: 8px 0px;
+}
+
+button {
+    padding: 5px 9px;
+    font-weight: 500;
+    color: white;
+    background-color: var(--purple);
+    border-color: var(--purple);
+    border-radius: 5px;
 }
