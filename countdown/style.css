@@ -46,6 +46,7 @@
     position: absolute;
     top: 20%;
     left: 3%;
+    width: 400px;
 }
 
 #titulo {
@@ -75,6 +76,7 @@ span {
 }
 
 button {
+    cursor: pointer;
     padding: 5px 9px;
     font-weight: 500;
     color: white;
@@ -82,3 +84,63 @@ button {
     border-color: var(--purple);
     border-radius: 5px;
 }
+.cadastro {
+    display: none;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(27,25,64,1) 0%, rgba(108,99,255,1) 50%, rgba(156,154,182,1) 100%);
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    top: 110px;
+    right: 50px;
+    border-radius: 5px;
+}
+
+#nome {
+    width: 200px;
+    margin: 50px 0 5px 0;
+    border-radius: 5px;
+}
+#email {
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#senha {
+    width: 150px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.cadastro h1 {
+    color: white;
+    font-weight: 500;
+}
+
+.cadastro button {
+    cursor: pointer;
+    background-color: white;
+    color: var(--purple);
+}
+
+.icons {
+    width: 15px;
+    padding-right: 3px;
+}
+
+#checkbox {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+#submit {
+    margin-top: 15px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: .6s;
+}
+
