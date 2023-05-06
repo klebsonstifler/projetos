@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600&display=swap');
+
+:root {
+    --font-principal: 'Merriweather Sans', sans-serif;
+
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 67%;
+    grid-gap: 20px;
+}
+
+.container .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.identificacao { /* card de nome e foto */
+    border: 1px solid var(--body-bg-color);
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+#foto-perfil {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid greenyellow;
+    padding: 3px;
+}
+
+.links { /* card de links */
+    border: 1px solid var(--body-bg-color);
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
+}
+
+
+.icones-nome {  /*nomes dos icones no card de links */
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.tecnologias { /* card de tecnologias */
+    border: 1px solid var(--body-bg-color);
+    box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#titulo-tec {
+    font-weight: 600;
+}
+
+.container-tec { /* container com as tecnologias */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+
+.tecnologias-tec {
+    border: 1px solid black;
+    box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
+    border-radius: 50px;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--bg-techs);
+    color:black;
+    font-weight: 600;  
+}
+
+.titulos {
+    width: 650px;
+    margin: auto;
+    text-align: center;
+}
+
+.titulos, .content-projects { /* div's com as postagens e projetos */
+    border: 1px solid var(--body-bg-color);
+    box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
+    border-radius: 30px;
+    height: auto;
+    padding: 10px;  
+}
+
+a { /* todos os links */
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    color: #ffff;
+    text-shadow:1px 1px 1px #00d9ff;
+}
+
+.content-projects .projetos-git .create-js { /*div dos projetos */
+    border: 1px solid var(--body-bg-color);
+    box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
+    border-radius: 30px;
+    width: 650px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px auto;
+}
+
+.content-projects .projetos-git div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-projects .projetos-git div .date-create {
+    border: 1px solid var(--bg-cards);
+    border-radius:20px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    height: 15px;
+}
+
+.content-projects .projetos-git div .language .circle {
+    background-color: #00d9ff; 
+    display: inline-block; 
+    width: 12px; 
+    height: 12px;
+    margin-right: 5px;
+    border: 1px solid var(--bg-cards);
+    border-radius: 50%;
+}
