@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background: url(../imagens/fundo-madeira.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+body {
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center fixed;
+    background-size: cover;
+}
+
+main {
+    position: relative;
+    height: 100vh; 
+}
+
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 527px;
+    width: 260px;
+    background: url('../imagens/frame-iphone250.png') no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 65px;
+    left: 18px;
+    width:214.5px ;
+    height:379.5px ;
+    border-radius: 2px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais > a > img {
+    width: 50px;
+    margin: 10px 5px 0px 0px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #0000007c;
+}
+
+section#redes-sociais img:hover {
+    cursor: pointer;
+    width: 60px;
+    margin-right: 20px;
+    transition: 0.5s;
+    
+}
+section #sombrahome:hover {
+    box-shadow:1px 1px 70px 10px #91909096;
+}
+
+section #sombrayoutube:hover {
+    box-shadow:1px 1px 70px 10px #c50c0c96;
+}
+
+section #sombragithub:hover {
+    box-shadow:1px 1px 70px 10px #0cc52b96;
+}
+
+section #sombrainstagram:hover {
+    box-shadow:1px 1px 70px 10px #e92a8396;
+}
+
+section #sombratwitter:hover {
+    box-shadow:1px 1px 70px 10px #21aae996;
+}
+
+section #sombrafacebook:hover {
+    box-shadow:1px 1px 70px 10px #0d47c496;
+}
