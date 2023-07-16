@@ -121,7 +121,7 @@ a:hover {
     border: 1px solid var(--body-bg-color);
     box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
     border-radius: 30px;
-    width: 650px;
+    width: 90%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -173,4 +173,5 @@ a:hover {
     .links {
         text-align: center;
     }
+
 }
