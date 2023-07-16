@@ -20,7 +20,7 @@ body {
     display: grid;
     grid-template-columns: 30% 67%;
     grid-gap: 20px;
-    
+    align-content: center;
     
 }
 
@@ -143,7 +143,7 @@ a:hover {
 }
 
 .content-projects .projetos-git div .language .circle {
-    background-color: #00d9ff; 
+    background-color: #0bcff1; 
     display: inline-block; 
     width: 12px; 
     height: 12px;
@@ -158,6 +158,8 @@ a:hover {
     .container {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        margin: auto;
     }
     
     .container-tec { /* container com as tecnologias */
@@ -174,4 +176,29 @@ a:hover {
         text-align: center;
     }
 
+    .content-projects {
+        width: 80vw;
+    }
+
+    .content-projects .projetos-git .create-js div a {
+        overflow: hidden;
+        
+    }
+
+    .content-projects .projetos-git div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-projects .projetos-git div .date-create {
+        display: none;
+    }
+
+    .content-projects .projetos-git div .language .circle {
+        display: none;
+    }
+
+    .content-projects .projetos-git div .language {
+        display: none;
+    }
 }
