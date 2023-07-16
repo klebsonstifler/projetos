@@ -3,21 +3,25 @@
 :root {
     --font-principal: 'Merriweather Sans', sans-serif;
 
-    --body-bg-color: #22212C;
-    --text-color: #837E9F;
+    --body-bg-color: #171718;
+    --text-color: #4b94a7;
     --bg-cards: #302F3D;
-    --bg-techs: #CB92B1;
+    --bg-techs: #70dfd5;
 }
 
 body {
     background-color: var(--body-bg-color);
     color: var(--text-color);
+    align-items: center;
+    
 }
 
 .container {
     display: grid;
     grid-template-columns: 30% 67%;
     grid-gap: 20px;
+    
+    
 }
 
 .container .menu {
@@ -32,12 +36,13 @@ body {
     padding: 10px;
     box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
     text-align: center;
+    width: 90%;
 }
 
 #foto-perfil {
     width: 150px;
     border-radius: 50%;
-    border: 3px solid greenyellow;
+    border: 3px solid #91e47c;
     padding: 3px;
 }
 
@@ -46,6 +51,7 @@ body {
     border-radius: 30px;
     padding: 10px;
     box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
+    width: 90%;
 }
 
 
@@ -59,23 +65,27 @@ body {
     box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
     border-radius: 30px;
     padding: 10px;
+    width: 90%;
 }
 
 #titulo-tec {
     font-weight: 600;
+    
 }
 
 .container-tec { /* container com as tecnologias */
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 10px;
+    
 }
 
 .tecnologias-tec {
     border: 1px solid black;
     box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
     border-radius: 50px;
-    width: 120px;
+    width: 90%;
+    font-size: 0.85rem;
     text-align: center;
     cursor: pointer;
     background-color: var(--bg-techs);
@@ -84,7 +94,6 @@ body {
 }
 
 .titulos {
-    width: 650px;
     margin: auto;
     text-align: center;
 }
@@ -94,7 +103,8 @@ body {
     box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.75);
     border-radius: 30px;
     height: auto;
-    padding: 10px;  
+    padding: 10px;
+    width: 90%;  
 }
 
 a { /* todos os links */
@@ -140,4 +150,27 @@ a:hover {
     margin-right: 5px;
     border: 1px solid var(--bg-cards);
     border-radius: 50%;
+}
+
+@media (max-width: 700px) {
+  
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-tec { /* container com as tecnologias */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tecnologias {
+        text-align: center;
+    }
+
+    .links {
+        text-align: center;
+    }
 }
