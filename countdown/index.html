@@ -9,58 +9,50 @@
 </head>
 <body>
 
-    <div class="imagetop"><img src="images/images/top-image.svg" alt="topimage"></div>
-    <div class="foguete" id="foguete"><img src="images/images/rocket.svg" alt="foguete"></div>
-    <div class="imagebottom"><img src="images/images/bottom-image.svg" alt="bottomimage"></div>
-
+    <div class="imagetop"><img src="images/images/top-image.svg" alt="topimage"></div>    
     <div class="container">
-
         <h1 id="titulo">
             READY TO LAUNCH IN...
         </h1>
-
         <div class="contador" id="contador">
-        
+    
             <div class="dias">
                 <span>Dias</span>
                 <p class="numbers" id="dias">00</p>
-                
+    
             </div>
-        
+    
             <div class="horas">
                 <span>Horas</span>
                 <p class="numbers" id="horas">00</p>
             </div>
-        
+    
             <div class="minutos">
                 <span>Minutos</span>
                 <p class="numbers" id="minutos">00</p>
             </div>
-        
+    
             <div class="segundos">
                 <span>Segundos</span>
                 <p class="numbers" id="segundos">00</p>
             </div>
-        
+    
         </div>
         <p class="text">Inscreva-se para saber mais sobre o lançamento</p>
         <button id="inscreva" onclick="cad">
             Inscreva-se
         </button>
     </div>
+    <div class="foguete" id="foguete"><img src="images/images/rocket.svg" alt="foguete"></div>
+    <div class="imagebottom"><img src="images/images/bottom-image.svg" alt="bottomimage"></div>
     <div class="cadastro" id="cadastro">
         <form action="cadastro.php">
-
             <p><img src="images/images/user.png" alt="" class="icons"> <input type="text" name="nome" id="nome" placeholder="Nome Completo" autocomplete="off"></p>
-
             <p><img src="images/images/envelope.png" alt="" class="icons"> <input type="email" name="email" id="email" placeholder="Email" autocomplete="off"></p>
-
             <p><img src="images/images/padlock.png" alt="" class="icons"><input type="password" name="senha" id="senha" placeholder="Senha" autocomplete="off" maxlength="20"></p>
-        
+    
             <p id="submit"><button type="submit" >Inscreva-se</button></p>
-
             <p id="checkbox"><input type="checkbox" name="check" id="check"> <span>Aceito receber mensagens no e-mail</span></p>
-
         </form>
     </div class="cadastro">
 
