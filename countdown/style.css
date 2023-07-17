@@ -29,7 +29,7 @@
     top: 120px;
 }
 .foguete img {
-    width: 400px;
+    width: 380px;
 }
 
 .imagebottom {
@@ -46,7 +46,7 @@
     position: absolute;
     top: 20%;
     left: 3%;
-    width: 400px;
+    width: 380px;
 }
 
 #titulo {
@@ -108,7 +108,7 @@ button {
 }
 
 #senha {
-    width: 150px;
+    width: 200px;
     margin-bottom: 5px;
     border-radius: 5px;
 }
@@ -164,6 +164,14 @@ button:hover {
         display: block;
         position: static;
     }
+    .cadastro {
+        position: static;
+        background: linear-gradient(90deg, rgba(27,25,64,1) 0%, rgba(108,99,255,1) 50%, rgba(156,154,182,1) 100%);
+        width: 300px;
+        margin: auto;
+        border-radius: 5px;
+    }
+
     .imagebottom {
         display: block;
         position: static;
