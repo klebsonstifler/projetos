@@ -29,7 +29,7 @@
     top: 120px;
 }
 .foguete img {
-    width: 380px;
+    width: 400px;
 }
 
 .imagebottom {
@@ -46,7 +46,7 @@
     position: absolute;
     top: 20%;
     left: 3%;
-    width: 380px;
+    width: 400px;
 }
 
 #titulo {
@@ -152,17 +152,22 @@ button:hover {
     .imagetop {
         display: block;
         position: static;
-        width: 420px;
+        width: 100%;
     }
     .container {
         display: block;
         position: static;
         margin: auto;
         padding: 20px 10px;
+        width: 360px;
     }
     .foguete {
         display: block;
         position: static;
+    }
+
+    .foguete img {
+        width: 350PX;
     }
     .cadastro {
         position: static;
@@ -175,6 +180,6 @@ button:hover {
     .imagebottom {
         display: block;
         position: static;
-        width: 420px;
+        width: 100%;
     }
 }
